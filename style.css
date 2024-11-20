@@ -1,0 +1,206 @@
+body{
+
+background-color: aliceblue;
+
+}
+
+
+.logo{
+
+    margin-right: 10px;
+
+}
+
+
+.card{
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+
+.recipes{
+
+    width: 100%;
+    overflow: auto;
+
+}
+
+
+.card{
+
+width: 30%;
+float: left;
+
+}
+
+
+.button{
+
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0.5px 1px;
+    border: 10px solid rgb(0, 98, 255);
+    border-radius: 5px;
+    background-color: rgb(0, 98, 255);
+
+    transition: transform 3s ease-in 0.3s;
+
+}
+
+.button:hover{
+
+    transform: translateX(40px);
+
+}
+
+
+
+
+
+h5{
+
+    text-align: center;
+    font-family: cursive;
+    font-size: 45px;
+    font-weight: 900;
+
+}
+
+
+@keyframes slideright{
+
+    from{ transform: translateX(-300px);}
+    
+
+
+    to{ transform: translateX(0px);}
+
+}
+
+
+
+
+.animate{
+
+    animation: slideright 3s ease-in-out 0s reverse infinite both;
+
+    transform: translateX(-150px);
+
+}
+
+
+@keyframes slidein{
+
+    from{ 
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+
+    to{
+        translate: 0 0;
+        scale: 100%;
+    }
+
+}
+
+.animate2{
+
+
+animation-name: slidein;
+animation-duration: 5s;
+
+padding: 0.5px 1px;
+border: 10px solid rgb(0, 98, 255);
+border-radius: 5px;
+background-color: rgb(0, 98, 255);
+
+
+}
+
+
+
+.wrapper{
+
+    width: 90%;
+    max-width: 1536px;
+    height: 100px;
+    margin-top: 10px;
+    margin-inline: auto;
+    overflow: hidden;
+    mask-image: linear-gradient( to right,
+    
+    
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0),
+    
+    );
+
+}
+
+
+@keyframes scrollLeft {
+ 
+    to{
+
+        left: -200px;
+
+    }
+
+}
+
+
+.item{
+
+    width: 200px;
+    height: 100px;
+    left: max(calc(200px * 6), 100%);
+    position: absolute;
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
+
+
+.img1{
+
+    animation-delay: calc(30s/6 * (6-1)*-1 );
+
+}
+
+.img2{
+
+    animation-delay: calc(30s/6 * (6-2)*-1 );
+
+}
+
+.img3{
+
+    animation-delay: calc(30s/6 * (6-3)*-1 );
+
+}
+
+.img4{
+
+    animation-delay: calc(30s/6 * (6-4)*-1 );
+
+}
+
+.img5{
+
+    animation-delay: calc(30s/6 * (6-5)*-1 );
+
+}
+
+.img6{
+
+    animation-delay: calc(30s/6 * (6-6)*-1 );
+
+}
