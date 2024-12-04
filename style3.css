@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'Starborn';
+    src: url(Starborn.ttf);
+}
+
+body{
+    background-image: url(rainbow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  /*navbar*/
+
+  .nav-link{
+    font-family: "Starborn";
+    color: #17B3E6;
+  }
+
+  .nav-link:hover{
+    color: #0580fc;
+  }
+
+  .navbar-brand{
+    font-family: "Starborn";
+    color: #58C5BF;
+  }
+
+  .navbar-brand:hover{
+    color: #0580fc;
+    transition: 0.5s;
+  }
+
+
+
+ /* Card group */
+.card-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: auto;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+
+.container, .container2, .container3, .container4, .container5, .container6 {
+    position: relative;
+    width: 300px;
+    height: 300px; 
+    margin: 20px;
+}
+
+
+.image2{
+    display: block;
+    width: 120%; 
+    height: 95%;
+    object-fit: cover; 
+    border-radius: 10px;
+
+    position: relative;
+    transform: translateX(-10%);
+     
+}
+
+.image{
+    display: block;
+    width: 105%; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px; 
+
+        margin-left: auto;
+        margin-right: auto;
+    
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+}
+
+.image3 {
+    display: block;
+    width: 105%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image4 {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image5 {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.image6 {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+
+.overlay{
+    background-color: #da0428;
+}
+
+.overlay2{
+    background-color: #ffd323;
+}
+
+.overlay3{
+    background-color: #000000;
+}
+
+.overlay4{
+    background-color: #f5665d;
+}
+
+.overlay5{
+    background-color: #d9e14a;
+}
+
+.overlay6{
+    background-color: #5b9ce7;
+}
+
+.container:hover .overlay, .container2:hover .overlay2, .container3:hover .overlay3, .container4:hover .overlay4, .container5:hover .overlay5, .container6:hover .overlay6 {
+    width: 100%;
+}
+
+/* Text inside overlays */
+.text, .text2, .text3, .text4, .text5, .text6 {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    font-family: "Starborn";
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+h1{
+
+    text-align: center;
+    font-family: "Starborn";
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 50px;
+    
+
+        text-shadow: 0px 0px 2px rgb(35, 132, 185), 0 0 15px rgb(0, 183, 255);
+
+    }
+
+
+h2{
+
+    text-align: center;
+    font-family: "Starborn";
+    color: white;
+    font-size: 20px;
+
+    text-shadow: 0px 0px 2px rgb(35, 132, 185), 0 0 15px rgb(0, 183, 255);
+
+}
+
+
+
+    .kitty {
+        position: relative;
+        width: 1080px;
+        height: 200px; 
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #da0428;
+        border-radius: 10px;
+        
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 10px; 
+        
+    }
+    .kittyhead {
+        width: 20%; 
+        height: auto; 
+        max-height: 140%; 
+        object-fit: contain; 
+    }
+    .kittytext {
+        font-family: Starborn;
+        color: white;
+        width: 75%; 
+        text-align: left;
+    }
+    #main{
+        display: none;
+    }
+
+
+    .sam {
+        position: relative;
+        width: 1080px;
+        height: 200px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: #ffd323;
+        border-radius: 10px;
+        
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 10px; 
+        
+    }
+    .samhead {
+        width: 20%; 
+        height: auto; 
+        max-height: 140%; 
+        object-fit: contain; 
+    }
+    .samtext {
+        font-family: Starborn;
+        color: white;
+        width: 75%; 
+        text-align: left;
+    }
+    #main2{
+        display: none;
+    }
+
+
+    .badtz {
+        position: relative;
+        width: 1080px;
+        height: 200px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: #000000;
+        border-radius: 10px;
+        
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 10px; 
+        
+    }
+    .badtzhead {
+        width: 20%; 
+        height: auto; 
+        max-height: 140%; 
+        object-fit: contain; 
+    }
+    .badtztext {
+        font-family: Starborn;
+        color: white;
+        width: 75%; 
+        text-align: left;
+    }
+    #main3{
+        display: none;
+    }
+
+    .sayuri {
+        position: relative;
+        width: 1080px;
+        height: 200px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: #f5665d;
+        border-radius: 10px;
+        
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 10px; 
+        
+    }
+    .sayurihead {
+        width: 20%; 
+        height: auto; 
+        max-height: 200%; 
+        object-fit: contain; 
+    }
+    .sayuritext {
+        font-family: Starborn;
+        color: white;
+        width: 75%; 
+        text-align: left;
+    }
+    #main4{
+        display: none;
+    }
+
+
+    .keroppi {
+        position: relative;
+        width: 1080px;
+        height: 200px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: #d9e14a;
+        border-radius: 10px;
+        
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 10px; 
+        
+    }
+    .keroppihead {
+        width: 20%; 
+        height: auto; 
+        max-height: 200%; 
+        object-fit: contain; 
+    }
+    .keroppitext {
+        font-family: Starborn;
+        color: white;
+        width: 75%; 
+        text-align: left;
+    }
+    #main5{
+        display: none;
+    }
+
+
+    .daniel {
+        position: relative;
+        width: 1080px;
+        height: 200px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: #5b9ce7;
+        border-radius: 10px;
+        
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 10px; 
+        
+    }
+    .danielhead {
+        width: 20%; 
+        height: auto; 
+        max-height: 90%; 
+        object-fit: contain; 
+    }
+    .danieltext {
+        font-family: Starborn;
+        color: white;
+        width: 75%; 
+        text-align: left;
+    }
+    #main6{
+        display: none;
+    }
+
+    @keyframes slideLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    
+    .kitty, .sam, .badtz, .sayuri, .keroppi, .daniel {
+        animation: slideLeft 1s ease-out forwards;
+        opacity: 0;
+    }
+    
+
+
+    @keyframes slideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    .page {
+        animation: slideUp 1s ease-out forwards;
+        opacity: 0;
+    }
+    
