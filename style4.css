@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'Starborn';
+    src: url(Starborn.ttf);
+}
+
+
+  /*navbar*/
+
+  .nav-link{
+    font-family: "Starborn";
+    color: #17B3E6;
+  }
+
+  .nav-link:hover{
+    color: #0580fc;
+  }
+
+  .navbar-brand{
+    font-family: "Starborn";
+    color: #58C5BF;
+  }
+
+  .navbar-brand:hover{
+    color: #0580fc;
+    transition: 0.5s;
+  }
+
+
+  .container-fluid {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+.container{
+  font-family: "Starborn";
+  color: #0d7fdd;
+  width: 1150px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+h2{
+  font-size: 85px;
+  margin-top: 15px;
+
+  background-image: 
+    linear-gradient(90deg,#58C5BF, #0580fc);
+    background-clip: text;
+    color: transparent;
+
+      /* Text Shadow Property */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+
+  /*memory*/
+
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: #9de1ff;
+    color: white;
+  }
+  
+  h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 50px;
+      font-family: "Starborn";
+      margin-bottom: 20px;
+      margin-top: 20px;
+
+
+  text-shadow: 1px 1px 2px rgb(5, 38, 78), 0 0 15px rgb(0, 183, 255), 0 0 10px rgb(2, 42, 106);
+  }
+  
+  p {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: "Starborn";
+      text-shadow: 1px 1px 2px rgb(5, 38, 78), 0 0 15px rgb(0, 183, 255), 0 0 10px rgb(2, 42, 106);
+      margin-bottom: 20px;
+  }
+  
+  .restart{
+    font-family: "Starborn";
+    background-color: #0580fc;
+    box-shadow: 1px 1px 2px rgb(5, 38, 78), 0 0 15px rgb(0, 183, 255), 0 0 10px rgb(2, 42, 106);
+  }
+
+    .text{
+        font-size: 20px;
+        margin-top: auto;
+}
+
+  .actions {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .actions button {
+      padding: 8px 16px;
+      font-size: 16px;
+      border-radius: 10px;
+      color: white;
+  }
+  
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    grid-gap: 16px;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(2, calc(140px / 2 * 3));
+  }
+  
+  .card {
+    height: calc(140px / 2 * 3);
+    width: 140px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .front-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+      backface-visibility: hidden;
+      position: absolute;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+  }
+  
+  .card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .back {
+    background-image: url(assets/card2.png);
+    background-position: center center;
+    background-size:290px;
+    backface-visibility: hidden;
+  }
+  
+  .card .front {
+    transform: rotateY(180deg);
+  }
+
+
+p{
+    margin-top: 15px;
+  }
+
+
+
+  hr.rounded {
+    border-top: 10px solid #ffffff;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+
+  /*dress up*/
+
+
+
+
+
+
+  @font-face {
+    font-family: "Starborn";
+    src: url(Starborn.ttf);
+}
+
+/* General Body Styling */
+body {
+    background-color: #17B3E6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    h1{
+
+        text-align: center;
+        font-family: "Starborn";
+        color: snow;
+        text-shadow: 1px 1px 6px rgb(5, 38, 78);
+        font-size: 50px;
+
+    }
+
+/* Main Box Container */
+#box {
+    position: relative; /* Ensure children are positioned relative to this */
+    background-color: #0d7fdd;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    height: 640px; /* Adjust overall box height */
+    width: 480px;
+    overflow: hidden; /* Prevent content overflow */
+  }
+  
+  /* Inner Backdrop */
+  #backdrop {
+    top: 2em;
+    margin: auto;
+    position: relative; /* Position relative within the #box */
+    background-color: rgb(246, 240, 255);
+    border-radius: 20px;
+    height: 560px; /* Adjust the height here */
+    width: 400px;
+    z-index: 1; /* Keep it below other elements */
+    overflow: hidden; /* Prevent overflowing content */
+  }
+  
+  /* Buttons Styling */
+  .buttonBox {
+    position: relative; /* Position relative to the #box container */
+    margin-top: 40px; /* Add spacing between buttons and backdrop */
+    z-index: 10; /* Ensure buttons appear above the backdrop */
+    text-align: center; /* Center the buttons horizontally */
+  }
+  
+  button {
+    pointer-events: auto; /* Ensure buttons are clickable */
+    z-index: 10; /* Keep buttons on top */
+    color: #17B3E6;
+    background-color: rgb(243, 240, 255);
+    box-shadow: 0px 1px 2px 1px rgb(51, 143, 255);
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-size: 16px;
+    transition: 0.1s linear;
+    font-family: "Starborn";
+  }
+  
+  button:hover {
+    background-color: rgb(248, 252, 255);
+    box-shadow: 0px 2px 4px 1px #0580fc;
+  }
+  
+
+/* Girl Character Base */
+#girl {
+    background-image: url(photos/hangyo.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 700px;
+    width: 400px;
+    z-index: 1;
+}
+
+/* Dress Layers */
+#dress {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 700px;
+    width: 400px;
+    z-index: 6;
+}
+
+/* Hat Layers */
+#hat {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 700px;
+    width: 400px;
+    z-index: 6;
+}
+
+/* Face Layers */
+#face {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 700px;
+    width: 400px;
+    z-index: 6;
+}
+
+/* Dress Variations */
+
+
+.dress1 {
+    background-image: url(photos/shirt1.PNG);
+}
+
+.dress2 {
+    background-image: url(photos/shirt2.PNG);
+}
+
+.dress3 {
+    background-image: url(photos/shirt3.PNG);
+}
+
+.dress4 {
+    background-image: url(photos/shirt4.PNG);
+}
+
+.dress5 {
+    background-image: url(photos/shirt5.PNG);
+}
+
+/* Hat Variations */
+.hat1 {
+    background-image: url(photos/hat1.PNG);
+}
+
+.hat2 {
+    background-image: url(photos/hat2.PNG);
+}
+
+.hat3 {
+    background-image: url(photos/hat3.PNG);
+}
+
+.hat4 {
+    background-image: url(photos/hat4.PNG);
+}
+
+/* Face Variations */
+.face1 {
+    background-image: url(photos/face1.PNG);
+}
+
+.face2 {
+    background-image: url(photos/face2.PNG);
+}
+
+.face3 {
+    background-image: url(photos/face3.PNG);
+}
+
+.face4 {
+    background-image: url(photos/face4.PNG);
+}
+
+
+
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.page {
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
