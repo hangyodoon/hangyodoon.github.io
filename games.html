@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANGYODOON</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style4.css">
+
+</head>
+<body>
+
+
+<!--navbar-->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="images/hangyodon icon.png" alt="Bootstrap" width="40" height="40">
+      </a>
+
+      <a class="navbar-brand" href="https://hellokitty.fandom.com/wiki/Hangyodon">HANGYODOON!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="friends.html">Sanrio Friends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="games.html">Games</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    
+  </nav>
+
+
+<div class="page">
+
+
+  <div class="container">
+    <h2> HAngyodon GAmes! </h2>
+  </div>
+
+  <!--MEMORY-->
+
+  <h1>Memory Cards</h1>
+  <p class="text">Can you match the Hangyodon?</p>
+  <div class="grid-container">
+  </div>
+  <p>Score: <span class="score"></span></p>
+  <div class="actions">
+      <button onclick="restart()" class="restart">Restart</button>
+  </div>
+
+  <hr class="rounded">
+
+  <!--DRESSUP-->
+
+
+  <h1 id="heading">Hangyodon Dressup!</h1>
+  <div id="box">
+    <div id="backdrop">
+      <div id="hat"></div>
+      <div id="girl"></div>
+      <div id="dress"></div>
+      <div id="face"></div>
+    </div>
+    <div class="buttonBox">
+      <button id="nextdress" onclick="nextdress()">dress➡</button>
+      <button id="nexthat" onclick="nexthat()">Accessory➡</button>
+      <button id="nextface" onclick="nextface()">face➡</button>
+    </div>
+
+   
+  </div>
+
+
+</div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
