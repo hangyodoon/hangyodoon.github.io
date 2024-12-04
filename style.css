@@ -1,38 +1,172 @@
-body{
-
-background-color: aliceblue;
-
+@font-face {
+    font-family: 'Starborn';
+    src: url(Starborn.ttf);
 }
 
 
-.logo{
-
-    margin-right: 10px;
-
-}
-
-
-.card{
-
-    margin-top: 20px;
-    margin-left: 20px;
-
-}
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
 
-.recipes{
+
+.hello{
 
     width: 100%;
     overflow: auto;
 
+ }
+
+.img{
+
+  float: right;
+   display: block;
+   margin-left: auto;
+    margin-right: 140px;
+    margin-top: 125px;
+
 }
 
 
-.card{
+.title{
 
-width: 30%;
-float: left;
+margin-top: 300px;
+margin-left: 225px;
+font-family: "Starborn";
+ 
+}
+
+
+.hyd{
+
+margin-left: 150px;
+font-family: "Starborn";
+color: #ffffff;
+
+background-image: 
+    linear-gradient(90deg,#58C5BF, #0580fc);
+    background-clip: text;
+    color: transparent;
+
+      /* Text Shadow Property */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ffffff;
 
 }
 
 
+h1{
+    font-size: 80px;
+    text-shadow: 0 0 15px #0580fc;
+}
+
+h2{
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgb(5, 38, 78), 0 0 15px rgb(0, 183, 255), 0 0 10px rgb(2, 42, 106);
+}
+
+/* button */
+
+
+.meet {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #17B3E6;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 11px;
+    padding: 20px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "Starborn";
+    border: 3px solid #ffffff;
+
+    box-shadow: 0 0 15px #033290;
+
+  }
+  
+  .meet span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .meet span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .meet:hover span {
+    padding-right: 25px;
+  }
+  
+  .meet:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  .meet:hover {
+    background-color: #ffffff;
+    color: #17B3E6;
+    border: 3px solid #17B3E6;
+  }
+
+  .btn-group{
+
+    float: left;
+    margin-left: 120px;
+
+  }
+
+/*navbar*/
+
+  .nav-link{
+    font-family: "Starborn";
+    color: #17B3E6;
+  }
+
+  .nav-link:hover{
+    color: #0580fc;
+  }
+
+  .navbar-brand{
+    font-family: "Starborn";
+    color: #58C5BF;
+  }
+
+  .navbar-brand:hover{
+    color: #0580fc;
+    transition: 0.5s;
+  }
+
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hello {
+    animation: slideUp 1s ease-out forwards;
+    opacity: 0;
+}
